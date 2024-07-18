@@ -1,0 +1,41 @@
+/* Container principal do Rodapé */
+
+.rodape {
+  background-color: var(--branco);
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  width: auto;
+  height: 58px;
+
+  position: fixed;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+}
+
+/* Lista de Ícones */
+
+.lista-icones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 9px 28px 8px 14px;
+
+  text-align: center;
+}
+
+.lista-icones li {
+  color: var(--cinza-escuro-opacidade);
+}
+
+.lista-icones li:first-of-type {
+  color: var(--azul);
+}
+
+.lista-icones__texto {
+  font-size: 12px;
+  font-weight: 400;
+}

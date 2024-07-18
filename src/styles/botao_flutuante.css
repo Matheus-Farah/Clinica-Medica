@@ -1,0 +1,97 @@
+/* Botão Flutuante */
+
+.container__botao__flutuante {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+
+  top: 730px;
+  left: 330px;
+
+  z-index: 10;
+}
+
+.botao_flutuante {
+  background-color: var(--azul);
+  transition: background-color 0.3s ease;
+
+  border-radius: 50%;
+
+  padding: 1.4em;
+
+  cursor: pointer;
+}
+
+#botao-flutuante:checked ~ .botao_flutuante ~ .lista-acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15em;
+}
+
+.lista-acoes {
+  display: none;
+  position: absolute;
+
+  bottom: 135%;
+  right: 0%;
+}
+
+.lista-acoes li {
+  display: flex;
+  align-items: center;
+  gap: 1.15em;
+}
+
+.botao_flutuante__texto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  text-align: center;
+
+  background-color: var(--branco);
+
+  width: 227px;
+  height: 23px;
+
+  padding: 2px 4px;
+
+  border-radius: 2323px;
+
+  position: absolute;
+  right: 70px;
+}
+
+.online {
+  width: 163px;
+}
+
+.overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.5s ease;
+
+  z-index: 9;
+  pointer-events: none;
+}
+
+#botao-flutuante:checked ~ .overlay {
+  background-color: var(--cor-de-fundo-overlay);
+  pointer-events: auto;
+  z-index: -1;
+}
+
+#botao-flutuante,
+#botao-flutuante-local,
+#botao-flutuante-online {
+  display: none;
+}

@@ -1,0 +1,172 @@
+/* Container geral */
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 5em;
+}
+
+/* Perfil da Médica */
+
+.container__perfil {
+  display: flex;
+  align-items: center;
+
+  margin: 2em 1.15em 0 1.15em;
+}
+
+.container__perfil-nome {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-left: 1.15em;
+
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: 400px;
+
+    color: var(--prata);
+  }
+}
+
+.container__imagem {
+  border-radius: 50%;
+
+  width: 57px;
+  height: 57px;
+}
+
+.paciente {
+  width: 32px;
+  height: 32px;
+}
+
+/* Lista de Consultas */
+
+.container__lista {
+  display: flex;
+  flex-direction: column;
+
+  padding-inline: 1.15em;
+}
+
+.container__lista__titulo {
+  font-size: 16px;
+  font-weight: 700;
+
+  padding-bottom: 0.5em;
+  padding-top: 1.6em;
+}
+
+.lista-consultas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lista-consultas li {
+  background-color: var(--branco);
+
+  border: 1px solid var(--branco-fumaca);
+  border-radius: 8px;
+
+  padding: 1.5em;
+}
+
+.borda {
+  color: var(--cor-borda);
+
+  margin-top: 1.15em;
+  margin-bottom: 1.15em;
+}
+
+.lista-consultas__paciente {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+  }
+}
+
+.lista-consultas__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  margin-left: 1.15em;
+
+  h3 {
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 400;
+
+    color: var(--prata);
+  }
+}
+
+.tipo-consulta {
+  display: flex;
+  gap: 8px;
+}
+
+.container__chat {
+  background-color: var(--branco-fumaca);
+
+  border-radius: 50%;
+}
+
+.chat {
+  padding: 0.5em;
+
+  width: 13.33px;
+  height: 13.33px;
+}
+
+.horario {
+  font-size: 12px;
+  margin-bottom: 1.15em;
+}
+
+/* Botões dos Cards */
+
+.container__botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__botao {
+  padding: 13px 16px;
+
+  border-radius: 8px;
+
+  width: 139px;
+  height: 48px;
+}
+
+.video {
+  background-color: var(--laranja-amarelado);
+  color: var(--branco);
+}
+
+.audio {
+  background-color: var(--branco);
+  color: var(--cinza-escuro);
+}
+
+.localizacao {
+  width: 296px;
+
+  background-color: var(--azul);
+  color: var(--branco);
+}
