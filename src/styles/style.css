@@ -4,6 +4,7 @@
 @import url("consultas.css");
 @import url("rodape.css");
 @import url("botao_flutuante.css");
+@import url("formulario.css");
 
 :root {
   --cor-de-fundo: linear-gradient(165.96deg, #f8f4ff 0%, #eff0f4 100%);

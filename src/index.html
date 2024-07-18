@@ -412,6 +412,58 @@
             </div>
           </li>
         </ul>
+
+        <section class="formulario__container">
+          <h2 class="container__lista__titulo">Cadastro de Consultas</h2>
+
+          <form class="formulario__cadastro">
+            <section class="formulario__cadastro__campos">
+              <label class="campo__descricao">Nome: </label>
+              <input
+                class="campo__preencher"
+                placeholder="Nome Completo"
+                type="text"
+              />
+            </section>
+
+            <section class="formulario__cadastro__campos">
+              <label class="campo__descricao">Tipo de Consulta: </label>
+
+              <section>
+                <input type="checkbox" name="Online" id="consulta" />
+                <p>Consulta Online</p>
+              </section>
+
+              <section>
+                <input type="checkbox" name="Presencial" id="consulta" />
+                <p>Consulta Presencial</p>
+              </section>
+            </section>
+
+            <section class="formulario__cadastro__campos">
+              <label class="campo__descricao">Data da Consulta: </label>
+              <input class="campo__preencher" type="date" />
+            </section>
+
+            <section class="formulario__cadastro__campos">
+              <label class="campo__descricao">Horário da Consulta: </label>
+              <input class="campo__preencher" type="time" />
+            </section>
+
+            <section class="formulario__cadastro__campos">
+              <label class="campo__descricao">Observações: </label>
+              <input
+                class="campo__preencher"
+                placeholder="Observações"
+                type="text"
+              />
+            </section>
+
+            <button class="container__botao form" type="submit">
+              Cadastrar Consulta
+            </button>
+          </form>
+        </section>
       </section>
     </main>
 

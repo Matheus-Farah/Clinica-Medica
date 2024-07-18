@@ -1,0 +1,55 @@
+.formulario__container {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .formulario__container {
+    display: block;
+  }
+
+  .formulario__cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    background-color: var(--branco);
+
+    padding: 1.15em;
+    width: max-content;
+
+    border: 1px solid var(--branco-fumaca);
+    border-radius: 8px;
+  }
+
+  .formulario__cadastro__campos {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    section {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+  }
+
+  .campo__descricao {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .campo__preencher {
+    border-radius: 8px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+
+    background-color: var(--azul);
+    color: var(--branco);
+  }
+}

@@ -29,6 +29,7 @@
 
 .lista-icones li {
   color: var(--cinza-escuro-opacidade);
+  cursor: pointer;
 }
 
 .lista-icones li:first-of-type {
@@ -38,4 +39,60 @@
 .lista-icones__texto {
   font-size: 12px;
   font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .lista-icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* Container principal do rodapé */
+
+  .rodape {
+    position: fixed;
+
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+
+    width: 180px;
+    height: auto;
+  }
+
+  /* Lista de Ícones */
+
+  .lista-icones {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 5em;
+  }
+
+  .lista-icones li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .lista-icones li:hover {
+    color: var(--azul);
+  }
+
+  .lista-icones__texto {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .lista-icones li:first-of-type {
+    p {
+      font-weight: 700;
+    }
+  }
 }

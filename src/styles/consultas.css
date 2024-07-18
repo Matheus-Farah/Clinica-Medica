@@ -29,7 +29,7 @@
   }
 
   p {
-    font-weight: 400px;
+    font-weight: 400;
 
     color: var(--prata);
   }
@@ -77,6 +77,8 @@
   border-radius: 8px;
 
   padding: 1.5em;
+
+  width: auto;
 }
 
 .borda {
@@ -152,6 +154,8 @@
 
   width: 139px;
   height: 48px;
+
+  font-family: var(--fonte-principal);
 }
 
 .video {
@@ -169,4 +173,87 @@
 
   background-color: var(--azul);
   color: var(--branco);
+}
+
+@media screen and (min-width: 768px) {
+  .lista-consultas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* Container principal */
+
+  .container {
+    padding-left: 15em;
+  }
+
+  /* Perfil da Médica */
+
+  .container__perfil-nome {
+    h1 {
+      font-size: 31px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .container__imagem {
+    width: 96px;
+    height: 96px;
+  }
+
+  .paciente {
+    width: 48px;
+    height: 48px;
+  }
+
+  /* Lista dos Pacientes */
+
+  .container__lista__titulo {
+    padding-bottom: 54px;
+  }
+
+  .lista-consultas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 66px;
+
+    padding-inline: 28px;
+  }
+
+  .lista-consultas li {
+    width: auto;
+  }
+
+  .lista-consultas__info {
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  .horario {
+    font-size: 14px;
+  }
+
+  .container__botoes {
+    display: flex;
+    gap: 24px;
+  }
+
+  .container__botao {
+    font-size: 16px;
+
+    width: 172px;
+  }
+
+  .localizacao {
+    width: 350px;
+  }
 }
