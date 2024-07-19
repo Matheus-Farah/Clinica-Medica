@@ -22,6 +22,10 @@
   cursor: pointer;
 }
 
+.botao_flutuante img {
+  margin: auto;
+}
+
 #botao-flutuante:checked ~ .botao_flutuante ~ .lista-acoes {
   display: flex;
   flex-direction: column;
